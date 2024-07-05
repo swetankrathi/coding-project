@@ -23,7 +23,7 @@ const app = require('./app');
 const port = process.env.PORT || 8001;
 
 // Start server
-app.listen(port, '127.0.0.1', () => {
+app.listen(port, '0.0.0.0', () => {
     console.log(`🖥 Project execution environment: ${process.env.NODE_ENV}`)
     console.log(`🌐 App is listening on port ${port}...`);
 });
