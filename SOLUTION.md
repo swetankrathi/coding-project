@@ -158,20 +158,22 @@ To run project, do `npm run dev`
 Alternativly you this project is hosted on heroku and you can use the below url as {{basurl}}  
 `https://p-zero-assignment-8e78d50620b8.herokuapp.com`
 
+For example, a url to fetch users would be `https://p-zero-assignment-8e78d50620b8.herokuapp.com/api/v1/users`
+
 ## REST APIs
 
 
 User:
 
-`GET:` `/api/v1/user`
+`GET:` `/api/v1/users`
 
-`GET:` `/api/v1/user/:id`
+`GET:` `/api/v1/users/:id`
 
-`POST:` `/api/v1/user`
+`POST:` `/api/v1/users`
 
-`PUT:` `/api/v1/user/:id`
+`PUT:` `/api/v1/users/:id`
 
-`DELETE:` `/api/v1/user/:id`
+`DELETE:` `/api/v1/users/:id`
 
 Reference data payload for body
 ```json
