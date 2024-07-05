@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "abd13511-ad69-400f-83e8-58114d96e80b",
+		"name": "p0 - Take Home Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "625921"
+	},
+	"item": [
+		{
+			"name": "Get started (Create Data)",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"John Doe\",\n    \"email\": \"johndoe@xyz.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://p-zero-assignment-8e78d50620b8.herokuapp.com/api/v1/users",
+							"protocol": "https",
+							"host": [
+								"p-zero-assignment-8e78d50620b8",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Calendar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Work Calendar\",\n    \"description\": \"My work schedule\",\n    \"user\": \"userId\",\n    \"availability\": {\n        \"startTime\": \"2024-07-05 09:00\",\n        \"endTime\": \"2024-07-05 19:00\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://p-zero-assignment-8e78d50620b8.herokuapp.com/api/v1/calendars",
+							"protocol": "https",
+							"host": [
+								"p-zero-assignment-8e78d50620b8",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"calendars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Bookings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Work Calendar\",\n    \"description\": \"My work schedule\",\n    \"user\": \"userId\",\n    \"calendar\": \"calendarId\",\n    \"startTime\": \"2024-07-05 09:00\",\n    \"endTime\": \"2024-07-05 19:00\",\n    \"participants\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://p-zero-assignment-8e78d50620b8.herokuapp.com/api/v1/bookings",
+							"protocol": "https",
+							"host": [
+								"p-zero-assignment-8e78d50620b8",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"bookings"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://p-zero-assignment-8e78d50620b8.herokuapp.com/api/v1/users",
+					"protocol": "https",
+					"host": [
+						"p-zero-assignment-8e78d50620b8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Calendars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://p-zero-assignment-8e78d50620b8.herokuapp.com/api/v1/calendars",
+					"protocol": "https",
+					"host": [
+						"p-zero-assignment-8e78d50620b8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"calendars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Bookings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://p-zero-assignment-8e78d50620b8.herokuapp.com/api/v1/bookings",
+					"protocol": "https",
+					"host": [
+						"p-zero-assignment-8e78d50620b8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
