@@ -153,8 +153,10 @@ Clone the repo. Open the terminal and navigate to the directory where it is clon
 
 To config the database, please use config.env file, which is available in the root directory.
 
-To run project, do `npm start`
+To run project, do `npm run dev`
 
+Alternativly you this project is hosted on heroku and you can use the below url as {{basurl}}  
+`https://p-zero-assignment-8e78d50620b8.herokuapp.com`
 
 ## REST APIs
 
