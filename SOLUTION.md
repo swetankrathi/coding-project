@@ -43,7 +43,7 @@ We have three main resources here.
 3. Booking
 
 Here is the schema for each:
-```json
+```js
 // User Schema
 {
     username: {
@@ -66,7 +66,7 @@ Here is the schema for each:
 ```
 
 Here is the schema for each
-```json
+```js
 // Calendar Schema
 {
     name: {
@@ -103,7 +103,7 @@ Here is the schema for each
 ```
 
 Here is the schema for each
-```json
+```js
 // Booking Schema
 {
     name: {
@@ -235,7 +235,7 @@ Reference data payload for body
 ## Response formats
 Success:
 
-```json
+```js
 {
     status: 'success',
     message: 'message', // not always available 
@@ -247,7 +247,7 @@ Success:
 
 Error:
 
-```json
+```js
 {
     status: 'error',
     message: 'message', // not always available 
