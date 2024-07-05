@@ -75,6 +75,21 @@ exports.createBooking = async (req, res) => {
             });
         }
 
+        // Check if the desired booking time falls within the calendar's availability
+        const isWithinAvailability = calendar.availability.some(slot => {
+            return (
+                new Date(startTime) >= new Date(slot.startTime) &&
+                new Date(endTime) <= new Date(slot.endTime)
+            );
+        });
+
+        if (!isWithinAvailability) {
+            return res.status(400).json({
+                status: 'error',
+                message: 'Time slot is outside of available hours'
+            });
+        }
+
         // Check for overlapping bookings
         const overlappingBookings = await Booking.find({
             calendar: calendar,
