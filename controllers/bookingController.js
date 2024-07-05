@@ -32,7 +32,10 @@ exports.getAllBookings = async (req, res) => {
 
 exports.getBooking = async (req, res) => {
     try {
-        const booking = await Booking.findById(req.params.id);
+        const booking = await Booking.findById(req.params.id)
+            .populate('user', 'username email')
+            .populate('calendar', 'name description');
+        
         res.status(200).json({
             status: 'success',
             data: {
