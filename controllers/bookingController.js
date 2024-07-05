@@ -76,7 +76,7 @@ exports.createBooking = async (req, res) => {
         }
 
         // Check if the desired booking time falls within the calendar's availability
-        const isWithinAvailability = calendar.availability.some(slot => {
+        const isWithinAvailability = calendarDoc.availability.some(slot => {
             return (
                 new Date(startTime) >= new Date(slot.startTime) &&
                 new Date(endTime) <= new Date(slot.endTime)
