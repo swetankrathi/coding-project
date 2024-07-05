@@ -91,3 +91,28 @@ Reference data payload for body
     "participants": ["userId"]
 }
 ```
+
+## Response formats
+Success:
+
+```json
+{
+    status: 'success',
+    message: 'message', // not always available 
+    data: {
+        // data payload
+    }
+}
+```
+
+Error:
+
+```json
+{
+    status: 'error',
+    message: 'message', // not always available 
+    error: // error stack trace (not always available) 
+}
+```
+
+

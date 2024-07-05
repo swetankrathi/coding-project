@@ -12,7 +12,7 @@ if(!process.env.DATABASE_PASSWORD){
 }
 
 mongoose.connect(db).then(_con => {
-    console.log("DB Connection successfull")
+    console.log("DB Connection successful")
 }).catch(err => {
     console.error("Unable to connect to the database. Please check url and password.");
     process.exit();
