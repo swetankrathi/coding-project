@@ -162,6 +162,7 @@ For example, a url to fetch users would be `https://p-zero-assignment-8e78d50620
 
 ## REST APIs
 
+A postman collection file including basic GET and POST calls are available in extras directory. All other routes are listed below.
 
 User:
 
